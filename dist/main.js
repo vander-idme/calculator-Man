@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("function insert(num) {\n  document.form.textview.value = document.form.textview.value + num;\n}\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 

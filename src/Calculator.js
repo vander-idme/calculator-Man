@@ -20,26 +20,11 @@ Calculator.prototype.clear = function(){
 
 Calculator.prototype.equal = function(){
 
-  let result
-  let operator = "+"
-  let arrayNum = this.pantalla.value.split(operator)
-  console.log(arrayNum)
-  console.log(operator)
 
-  result = this.operation(arrayNum, operator)
-  this.pantalla.value = result
-}
-
-
-Calculator.prototype.operation = function(numeros){
-
-  let ans = 0
-  let sum
-  for(let i=0; i<numeros.length; i++){
-    sum = parseInt(numeros[i])
-    ans = ans + sum
+  let exp = this.pantalla.value
+  if(exp){
+    this.pantalla.value = eval(exp)
   }
-  return ans
 }
 
 

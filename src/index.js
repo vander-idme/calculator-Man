@@ -13,9 +13,13 @@ const buttonSeven = document.querySelector("#numberSeven")
 const buttonEight = document.querySelector("#numberEight")
 const buttonNine  = document.querySelector("#numberNine")
 
-const clear = document.querySelector("#clear")
-const plus  = document.querySelector("#plus")
-const equal  = document.querySelector("#equal")
+const minus           = document.querySelector("#minus")
+const plus            = document.querySelector("#plus")
+const division        = document.querySelector("#division")
+const multiplication  = document.querySelector("#multiplication")
+const equal           = document.querySelector("#equal")
+const backSpace       = document.querySelector("#backSpace")
+const clear           = document.querySelector("#clear")
 
 const calc = new Calculator({
   pantalla: pantalla,
@@ -30,12 +34,12 @@ const calc = new Calculator({
     buttonSeven,
     buttonEight,
     buttonNine,
-
-
     minus,
     plus,
+    division,
+    multiplication,
     equal,
+    backSpace,
     clear
   ]
-
 })

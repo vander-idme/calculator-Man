@@ -1,6 +1,7 @@
 function Calculator(config){
   this.pantalla = config.pantalla
   this.btns = config.buttons
+  // console.log(this.btns)
   this._listerner()
 }
 
@@ -19,12 +20,20 @@ Calculator.prototype.clear = function(){
 }
 
 Calculator.prototype.equal = function(){
-
-
   let exp = this.pantalla.value
   if(exp){
     this.pantalla.value = eval(exp)
   }
+}
+
+Calculator.prototype.backSpace = function(){
+  let exp = this.pantalla.value
+  let erase = ""
+  // let caracter = erase.charAt(erase.length - 1)
+  for(let i=0; i<exp.length-1; i++){
+    erase = erase + exp[i]
+  }
+  this.pantalla.value = erase
 }
 
 
@@ -42,8 +51,17 @@ Calculator.prototype.clickButtons = function(button){
   if(button.value === '-'){
     button.onclick = () => {this.print(button.value)}
   }
+  if(button.value === '*'){
+    button.onclick = () => {this.print(button.value)}
+  }
+  if(button.value === '/'){
+    button.onclick = () => {this.print(button.value)}
+  }
   if(button.value === '='){
     button.onclick = () => {this.equal()}
+  }
+  if(button.value === '<'){
+    button.onclick = () => {this.backSpace()}
   }
 }
 

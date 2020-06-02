@@ -7,17 +7,46 @@
 </head>
 <body>
   <h1>CALCULATOR MAN!</h1>
-  <p>Esta es mi primera calculadora</p>
 
   <main class="main">
     <form>
-      <input class="textview" name="textview">
+      <input id="pantalla" class="textview" name="textview">
     </form>
     <table>
       <tr>
-        <td><input class="button" type="button" value="1" onclick="insert(1)"></td>
-        <td><input class="button" type="button" value="2" onclick="insert(2)"></td>
-        <td><input class="button" type="button" value="3" onclick="insert(3)"></td>
+        <td><input id="clear"          class="button" type="button" value="C"></td>
+        <td><input id="backSpace"      class="button" type="button" value="<"></td>
+        <td><input id="division"       class="button" type="button" value="/"></td>
+
+        <td><input id="multiplication" class="button" type="button" value="*"></td>
+
+      </tr>
+      <tr>
+        <td><input id="numberSeven"    class="button" type="button" value="7"></td>
+        <td><input id="numberEight"    class="button" type="button" value="8"></td>
+        <td><input id="numberNine"     class="button" type="button" value="9"></td>
+
+        <td><input id="minus"          class="button" type="button" value="-"></td>
+
+      </tr>
+      <tr>
+        <td><input id="numberFour"    class="button" type="button" value="4"></td>
+        <td><input id="numberFive"    class="button" type="button" value="5"></td>
+        <td><input id="numberSix"     class="button" type="button" value="6"></td>
+
+        <td><input id="plus"          class="button" type="button" value="+"></td>
+
+      </tr>
+      <tr>
+        <td><input id="numberOne"     class="button" type="button" value="1"></td>
+        <td><input id="numberTwo"     class="button" type="button" value="2"></td>
+        <td><input id="numberThree"   class="button" type="button" value="3"></td>
+
+        <td><input id="equal"         class="button" type="button" value="="></td>
+
+      </tr>
+      <tr>
+        <td><input id="numberZero"    class="button" type="button" value="0"></td>
       </tr>
     </table>
   </main>
